@@ -1,0 +1,35 @@
+* {
+    font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cell {
+  background-color: #f7e25a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+}
+
+@media only screen and (max-width: 900px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
